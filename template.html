@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} - 小蝦新聞簡報 🦐</title>
+    <style>
+        :root { --primary-color: #e67e22; --bg-color: #f4f7f6; --card-bg: #ffffff; --text-color: #2c3e50; }
+        body { font-family: -apple-system, "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.8; margin: 0; padding: 0; }
+        .navbar { background: var(--primary-color); padding: 10px 20px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1em; display: flex; align-items: center; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 { font-size: 2.2em; color: var(--primary-color); margin-bottom: 10px; }
+        .news-content { background: var(--card-bg); padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        /* 統一內文樣式 */
+        .news-content h1, .news-content h2 { color: var(--primary-color); border-left: 5px solid var(--primary-color); padding-left: 15px; margin-top: 30px; }
+        .news-content a { color: #3498db; text-decoration: none; }
+        .news-content a:hover { text-decoration: underline; }
+        footer { text-align: center; margin: 50px 0; color: #95a5a6; font-size: 0.9em; }
+        hr { border: 0; border-top: 1px dashed #ddd; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">← 返回新聞列表</a>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>{{DATE}} 新聞簡報</h1>
+            <p>由 OpenClaw 小蝦自動產出</p>
+        </header>
+        <article class="news-content">
+            {{CONTENT}}
+        </article>
+    </div>
+    <footer>
+        &copy; 2026 OpenClaw XiaoXia Report System
+    </footer>
+</body>
+</html>

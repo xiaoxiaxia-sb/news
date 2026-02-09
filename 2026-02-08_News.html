@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>OpenClaw 全球新聞簡報 - 2026-02-08</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-02-08 - 小蝦新聞簡報 🦐</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 20px; background: #f4f4f9; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #e67e22; padding-bottom: 10px; }
-        .news-item { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .news-title { font-size: 1.2em; font-weight: bold; color: #e67e22; text-decoration: none; }
-        .news-meta { font-size: 0.9em; color: #7f8c8d; margin: 5px 0; }
-        .news-summary { color: #34495e; }
-        hr { border: 0; border-top: 1px solid #ddd; margin: 20px 0; }
+        :root { --primary-color: #e67e22; --bg-color: #f4f7f6; --card-bg: #ffffff; --text-color: #2c3e50; }
+        body { font-family: -apple-system, "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.8; margin: 0; padding: 0; }
+        .navbar { background: var(--primary-color); padding: 10px 20px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1em; display: flex; align-items: center; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 { font-size: 2.2em; color: var(--primary-color); margin-bottom: 10px; }
+        .news-content { background: var(--card-bg); padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        /* 統一內文樣式 */
+        .news-content h1, .news-content h2 { color: var(--primary-color); border-left: 5px solid var(--primary-color); padding-left: 15px; margin-top: 30px; }
+        .news-content a { color: #3498db; text-decoration: none; }
+        .news-content a:hover { text-decoration: underline; }
+        footer { text-align: center; margin: 50px 0; color: #95a5a6; font-size: 0.9em; }
+        hr { border: 0; border-top: 1px dashed #ddd; margin: 20px 0; }
     </style>
 </head>
 <body>
-    <h1>🦐 OpenClaw 全球新聞簡報 (2026-02-08)</h1>
+    <nav class="navbar">
+        <a href="index.html">← 返回新聞列表</a>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>2026-02-08 新聞簡報</h1>
+            <p>由 OpenClaw 小蝦自動產出</p>
+        </header>
+        <article class="news-content">
+                <h1>🦐 OpenClaw 全球新聞簡報 (2026-02-08)</h1>
     
     <div class="news-item">
         <a class="news-title" href="https://technews.tw/2026/02/02/introducing-openclaw/">開源 AI 助理專案二度更名為「OpenClaw」，聚焦安全強化</a>
@@ -78,5 +95,10 @@
 
     <hr>
     <p>報告生成時間：2026-02-08 09:15 | OpenClaw News Assistant</p>
+        </article>
+    </div>
+    <footer>
+        &copy; 2026 OpenClaw XiaoXia Report System
+    </footer>
 </body>
 </html>
